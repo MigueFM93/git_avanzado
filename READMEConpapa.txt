@@ -1,0 +1,1 @@
+Este es el entorno de trabajo del equipo Conpapa, donde trabajan los alumnos: FcoJavier y Daniel, en el que se almacenarán los ficheros de la clase de prácticas de la asignatura Evolucion del Software
