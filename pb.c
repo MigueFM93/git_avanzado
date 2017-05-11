@@ -43,6 +43,28 @@ int calculate_result(int white_balls[5], int power_ball)
     return 0;
 }
 
+int whiteballs_computer_generated() 
+{ 
+	return rand()%59+1; 
+} 
+
+int powerball_computer_generated() 
+{ 
+	return rand()%39+1; 
+} 
+
+void checkwhiteballs(int balls[5], int control)
+{
+	int last = balls[control];
+	for (int i = 0; i < control; i++){
+		if (last == balls[i]){
+			balls[control] = whiteballs_computer_generated();
+			break;
+		}
+	}
+}
+
+
 int main(int argc, char** argv)
 {
 	int balls[6];
@@ -77,6 +99,24 @@ int main(int argc, char** argv)
  		result = result * 2;
  	}
 
+ 	    if (6 != count_balls) 
+	    {
+	      for (int i = 0; i < 5; i++){ 
+		balls[i] = whiteballs_computer_generated();
+		checkwhiteballs(balls, i);			
+	      }
+	balls[5] = powerball_computer_generated(); // Power ball 
+
+	      printf("Your numbers are: "); 
+			for (int i = 0; i < 5; i++){ 
+			   printf("%d ", balls[i]); 
+			      }
+			      printf("\
+			nAnd the power ball:"); 
+			printf(" %d\
+			n", balls[5]); 
+			    }
+	
  	printf("%d percent chance of winning\n", result);
  	
  	return 0;
