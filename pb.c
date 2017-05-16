@@ -8,6 +8,8 @@
 #define MAX_WHITE_BALL 59
 #define MAX_POWER_BALL 39
 
+//FUNCION QUE NOS PIDE EL EJERCICIO 9, MUCHA PEREZA
+
 static int my_sort_func(const void* p1, const void* p2)
 {
 	int v1 = *((int *) p1);
