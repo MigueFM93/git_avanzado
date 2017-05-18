@@ -30,7 +30,15 @@ static int my_sort_func(const void* p1, const void* p2)
 }
 
 void lottery_numbers_simulation(){
-	//Ejercicio 9
+	  // Percent white balls 
+  for (int i = 0; i < 5; i++){ 
+    for (int j = 0; j < 5; j++){ 
+      if (white_balls[i] == lott[j]) 
+    }
+  }   
+  /  / Percent power ball 
+  if (power_ball == lott[5]) 
+    result += 0.1; 
 }
 
 int calculate_result(int white_balls[5], int power_ball)
@@ -108,6 +116,18 @@ int main(int argc, char** argv)
  	
  	// the power ball is always the last one given
  	int power_ball = balls[5];
+
+// Head for the lottery numbers 
+printf(“\
+n--- 
+The 
+lottery numbers ---\
+n”); 
+// Head for my numbers 
+printf(“\
+n--- 
+Your lottery numbers ---\
+n”);
 
  	int result = calculate_result(balls, power_ball);
 
