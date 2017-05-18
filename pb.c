@@ -117,7 +117,7 @@ int main(int argc, char** argv)
  	// the power ball is always the last one given
  	int power_ball = balls[5];
 
-// Head for the lottery numbers 
+// Head for the lotttery numbers 
 printf(“\
 n--- 
 The 
